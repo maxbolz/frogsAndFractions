@@ -73,7 +73,15 @@ public class Frog {
 		f1.visit(f2);
 		System.out.println(f1);
 		System.out.println(f2);
-		
+
+		Frog f3 = new Frog("Frank", 0,0);
+		f3.jump(3);
+		f3.jump(3);
+		System.out.println("\nBefore visiting Freddy:");
+		System.out.println(f3);
+		System.out.println("\nAfter visiting Freddy:");
+		f3.visit(f1);
+		System.out.println(f3);
 		// make a new frog named Frank.  have him jump twice and then go visit Freddy.
 
 	}
